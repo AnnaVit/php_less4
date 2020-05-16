@@ -2,6 +2,8 @@
 /** @var arrey $files */
 ?>
 <?php foreach($files as $file): ?>
-    <a href="/uploads/<?=$file?>" target="_blank"><img width="200px" src="/small/<?=$file?>" alt="img"></a>
+    <a href="/photo.php?id=<?=$file['id']?>" target="blank">
+        <img width="200px" src="/small/<?=$file['path']?>" alt="img">
+    </a>
 <?php endforeach;?>
 
